@@ -33,12 +33,24 @@ main {
     display: flex;
     flex-wrap: wrap;
     position: fixed;
-
+    text-align: center;
 }
 
 aside {
     background: lightseagreen;
 }
 
-/* @media screen and (max-width:768px) { */
+/* Changes header background color for tablets */
+@media screen and (max-width:992px) {
+    header {
+        background: maroon;
+    }
+}
+
+/* Changes nav bar background color for smartphones */
+@media screen and (max-width: 768px) {
+    nav {
+        background: blueviolet;
+    }
+}
 
