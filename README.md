@@ -1,6 +1,6 @@
 # Me'Chelle Dixon's Portfolio
 
-## Desciption
+## Description
 
 The purpose of this application is to showcase the web development skills and concepts that I have acquired throughout coding bootcamp and continued education.</br>
 This application includes links to completed projects and snippets of current works-in-progress while highlighting my strengths in HTML, CSS, Git and JavaScript.</br>

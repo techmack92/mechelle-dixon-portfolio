@@ -37,6 +37,7 @@ main {
     flex-wrap: wrap;
     text-align: center;
     margin: 50px;
+    /* flex: 200px; */
 }
 
 aside {
@@ -55,6 +56,7 @@ aside img {
 .box, .box-1 {
     flex: 1 1 0;
     flex-wrap: wrap;
+    flex-direction: row;
     border-style: none;
     margin: 50px;
 }
@@ -66,23 +68,28 @@ aside img {
     font-size: 30px;
 }
 
-.box img, .box-1 img {
-    width: 600px;
-    /* Rounds the corners of the */
-    border-radius: 8px; 
+.box-1 img {
+    width: 800px;
 }
 
 .box img {
     width: 450px;
 }
 
+#contact-me ul li, h3 {
+    list-style: none;
+    flex-direction: row;
+    font-size: 20px;
+}
+
 footer {
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     background: blanchedalmond;
     color: darkslateblue;
     position: fixed;
     width: 100%;
+    height: 150px;
     bottom: 0;
 }
 
