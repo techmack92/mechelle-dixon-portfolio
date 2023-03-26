@@ -6,10 +6,11 @@ body {
     font-family:'Courier New', Courier, monospace;
     margin: 0;
     color: black;
+    background: rgba(179, 176, 150, 0.493);
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     color: darkslateblue;
     background: blanchedalmond;
@@ -27,22 +28,52 @@ nav a {
     color: black;
     /* Removes the underline from the nav links */
     text-decoration: none;
+    z-index: 9999;
+
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
-    position: fixed;
     text-align: center;
+    margin: 50px;
 }
 
 aside {
-    background: darkslateblue;
-    color: lightcoral;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
 }
 
 aside img {
-    height: 450px;
+    /* Rounds the corners of the image */
+    border-radius: 11px;
+    /* Turns the shape of the image to a circle */
+    clip-path: circle(50%);
+}
+
+.box, .box-1 {
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    border-style: none;
+    margin: 50px;
+}
+
+.box header, .box-1 header {
+    background: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.box img, .box-1 img {
+    width: 600px;
+    /* Rounds the corners of the */
+    border-radius: 8px; 
+}
+
+.box img {
+    width: 450px;
 }
 
 footer {
@@ -51,12 +82,13 @@ footer {
     background: blanchedalmond;
     color: darkslateblue;
     position: fixed;
+    width: 100%;
     bottom: 0;
 }
 
 /* Changes header background color for tablets */
 @media screen and (max-width:992px) {
-    header, h1 {
+    header, footer, h1, h3 {
         background: tan;
         color: darkolivegreen;
     }
