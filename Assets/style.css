@@ -58,6 +58,11 @@ aside a {
     text-decoration: none;
 }
 
+/* Adds external link icon which opens contact links into a new tab */
+aside a[target="_blank"]::after {
+    content: "\2197";
+}
+
 .box, .box-1 {
     flex: 1 1 0;
     flex-wrap: wrap;
