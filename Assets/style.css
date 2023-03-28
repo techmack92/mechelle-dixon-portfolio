@@ -13,12 +13,12 @@ header {
     padding: 10px;
     text-align: center;
     color: darkslateblue;
-    background: blanchedalmond;
+    background: rgba(216, 191, 216, 0.363);
 }
 
 nav {
     display: flex;
-    background: lightcoral;
+    background: rgba(0, 128, 128, 0.356);
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -28,8 +28,9 @@ nav a {
     color: black;
     /* Removes the underline from the nav links */
     text-decoration: none;
-    z-index: 9999;
-
+    padding: 14px 20px;
+    border-style: solid;
+    border-width: 1px;
 }
 
 main {
@@ -37,13 +38,13 @@ main {
     flex-wrap: wrap;
     text-align: center;
     margin: 50px;
-    /* flex: 200px; */
 }
 
 aside {
     color: black;
-    border-style: solid;
-    border-width: 1px;
+    height: 100%;
+    left: 0;
+    flex-direction: row;
 }
 
 aside img {
@@ -53,11 +54,15 @@ aside img {
     clip-path: circle(50%);
 }
 
+aside a {
+    text-decoration: none;
+}
+
 .box, .box-1 {
     flex: 1 1 0;
     flex-wrap: wrap;
-    flex-direction: row;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
     margin: 50px;
 }
 
@@ -69,42 +74,50 @@ aside img {
 }
 
 .box-1 img {
-    width: 800px;
+    width: 700px;
 }
 
 .box img {
     width: 450px;
 }
 
-#contact-me ul li, h3 {
+#contact-me ul li {
     list-style: none;
     flex-direction: row;
     font-size: 20px;
 }
 
+#contact-me h3 {
+    background: none;
+}
+
 footer {
-    /* padding: 10px; */
     text-align: center;
-    background: blanchedalmond;
+    background: rgba(216, 191, 216, 0.363);
     color: darkslateblue;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
-    height: 150px;
+    padding: 10px;
     bottom: 0;
 }
 
 /* Changes header background color for tablets */
 @media screen and (max-width:992px) {
-    header, footer, h1, h3 {
-        background: tan;
+    header {
+        background: rgba(210, 180, 140, 0.452);
         color: darkolivegreen;
     }
+
+    nav {
+        background: rgba(85, 107, 47, 0.397);
+    }
+
 }
 
 /* Changes nav bar background color  for smartphones */
 @media screen and (max-width: 768px) {
     nav {
-        background: darkolivegreen;
+        background: rgba(85, 107, 47, 0.397);
         /* Stacks nav bar on top of side bar */
         flex-direction: column;
     }
@@ -112,6 +125,10 @@ footer {
     aside {
         background: tan;
         color: black;
+    }
+
+    .box-1 img {
+        width: 450px;
     }
 }
 
