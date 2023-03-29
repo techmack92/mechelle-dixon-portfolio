@@ -64,11 +64,11 @@ aside a[target="_blank"]::after {
 }
 
 .box, .box-1 {
-    flex: 1 1 0;
+    flex: 1;
     flex-wrap: wrap;
-    border-style: solid;
-    border-width: 1px;
-    margin: 50px;
+    border-style: none;
+    /* border-width: 1px; */
+    margin: 0;
 }
 
 .box header, .box-1 header {
@@ -79,11 +79,11 @@ aside a[target="_blank"]::after {
 }
 
 .box-1 img {
-    width: 700px;
+    width: 750px;
 }
 
 .box img {
-    width: 450px;
+    width: 600px;
 }
 
 #contact-me ul li {
@@ -100,7 +100,6 @@ footer {
     text-align: center;
     background: rgba(216, 191, 216, 0.363);
     color: darkslateblue;
-    /* position: fixed; */
     width: 100%;
     padding: 10px;
     bottom: 0;
@@ -133,7 +132,7 @@ footer {
     }
 
     .box-1 img {
-        width: 450px;
+        width: 600px;
     }
 }
 
