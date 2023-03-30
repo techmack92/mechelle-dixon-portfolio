@@ -37,38 +37,42 @@ main {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 50px;
+    margin: 0;
 }
 
-aside {
+main section article {
     color: black;
-    height: 100%;
     left: 0;
     flex-direction: row;
 }
 
-aside img {
+main section article img {
     /* Rounds the corners of the image */
     border-radius: 11px;
     /* Turns the shape of the image to a circle */
     clip-path: circle(50%);
+    max-width: 100%;
+    max-height: 100%;
 }
 
-aside a {
+main section article a {
+    /* Removes the underline from the contact links */
     text-decoration: none;
 }
 
 /* Adds external link icon which opens contact links into a new tab */
-aside a[target="_blank"]::after {
+main section article a[target="_blank"]::after {
     content: "\2197";
 }
 
 .box, .box-1 {
-    flex: 1;
+    flex: 1 1 0;
     flex-wrap: wrap;
     border-style: none;
-    /* border-width: 1px; */
+    padding: 5%;
     margin: 0;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .box header, .box-1 header {
@@ -79,21 +83,20 @@ aside a[target="_blank"]::after {
 }
 
 .box-1 img {
-    width: 750px;
+    width: 800px;
 }
 
 .box img {
-    width: 600px;
+    width: 700px;
 }
 
 #contact-me ul li {
     list-style: none;
-    flex-direction: row;
-    font-size: 20px;
 }
 
-#contact-me h3 {
+#contact-me h2 {
     background: none;
+    color: darkolivegreen;
 }
 
 footer {
@@ -105,8 +108,8 @@ footer {
     bottom: 0;
 }
 
-/* Changes header background color for tablets */
-@media screen and (max-width:992px) {
+/* Changes header and nav bar background and text color on tablets */
+@media screen and (max-width:1023px) {
     header {
         background: rgba(210, 180, 140, 0.452);
         color: darkolivegreen;
@@ -118,21 +121,23 @@ footer {
 
 }
 
-/* Changes nav bar background color  for smartphones */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     nav {
+        /* Changes nav bar background color for smartphones */
         background: rgba(85, 107, 47, 0.397);
         /* Stacks nav bar on top of side bar */
         flex-direction: column;
     }
 
-    aside {
+    main section article {
+        /* Changes sidebar bar background and text color for smartphones */
         background: tan;
         color: black;
     }
 
-    .box-1 img {
-        width: 600px;
+    .box-1 img, .box img {
+        /* This ensures the flex boxes continue to squeeze as the screen size decreases */
+        width: 100%;
     }
 }
 

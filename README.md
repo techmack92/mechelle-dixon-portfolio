@@ -15,7 +15,7 @@ This application is used to exhibit samples of past and current projects and to 
 
 The following snippet shows the web application's appearance and functionality:
 
-<!-- ![portfolio demo](./Assets/02-advanced-css-homework-demo.gif) -->
+![portfolio snippet](./Assets/portfoliosnippet.png)
 
 
 ## License
