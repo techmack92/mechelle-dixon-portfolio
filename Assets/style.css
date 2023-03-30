@@ -44,6 +44,7 @@ main section article {
     color: black;
     left: 0;
     flex-direction: row;
+    padding: 5%;
 }
 
 main section article img {
