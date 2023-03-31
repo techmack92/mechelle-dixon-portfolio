@@ -38,6 +38,7 @@ main {
     flex-wrap: wrap;
     text-align: center;
     margin: 0;
+    padding: 25px;
 }
 
 main section article {
